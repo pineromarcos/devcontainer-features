@@ -1,0 +1,7 @@
+{
+  "name": "vim-alpine",
+  "id": "vim-alpine",
+  "version": "1.0.0",
+  "description": "Installs vim on alpine",
+  "documentationURL": "https://github.com/pineromarcos/devcontainer-features"
+}
