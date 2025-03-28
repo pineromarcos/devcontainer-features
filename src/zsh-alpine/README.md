@@ -18,7 +18,7 @@ Installs zsh with OhMyZsh on alpine.
 
 ```json
 "features": {
-    "ghcr.io/pineromarcos/devcontainer-features/zsh-alpine:0": {
+    "ghcr.io/pineromarcos/devcontainer-features/zsh-alpine:latest": {
         "theme": "agnoster"
     }
 }
