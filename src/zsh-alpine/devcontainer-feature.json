@@ -1,0 +1,21 @@
+{
+  "name": "zsh-alpine",
+  "id": "zsh-alpine",
+  "version": "1.0.0",
+  "description": "Installs zsh with OhMyZsh on alpine",
+  "documentationURL": "https://github.com/pineromarcos/devcontainer-features",
+  "options": {
+    "theme": {
+      "type": "string", 
+      "default": "agnoster",
+      "description": "Theme from OhMyZsh",
+      "enum": [
+        "agnoster",
+        "robbyrussell",
+        "spaceship",
+        "powerlevel10k",
+        "avit"
+      ]
+    }
+  }
+}
