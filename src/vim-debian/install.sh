@@ -4,8 +4,7 @@ set -e
 
 echo "Installing vim..."
 
-apk add --no-cache \
-  vim
-
+apt update
+apt install -y vim
 
 echo "vim Installed"

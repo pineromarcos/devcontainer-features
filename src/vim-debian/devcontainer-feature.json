@@ -1,0 +1,7 @@
+{
+  "name": "vim-debian",
+  "id": "vim-debian",
+  "version": "1.0.0",
+  "description": "Installs vim on debian",
+  "documentationURL": "https://github.com/pineromarcos/devcontainer-features"
+}
