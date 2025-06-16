@@ -1,7 +1,7 @@
 {
   "name": "zsh-alpine",
   "id": "zsh-alpine",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Installs zsh with OhMyZsh on alpine",
   "documentationURL": "https://github.com/pineromarcos/devcontainer-features",
   "options": {

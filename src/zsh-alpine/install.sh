@@ -7,6 +7,7 @@ echo "Installing OhMyZsh..."
 ZSH_THEME=${THEME:-"agnoster"}
 
 apk add --no-cache \
+  openssh-client \
   git \
   zsh \
   zsh-vcs \
