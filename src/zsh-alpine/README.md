@@ -12,6 +12,7 @@ Installs zsh with OhMyZsh on alpine.
 | Optionkey | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | theme | Change the default theme  | string | agnoster |
+| username | Change the default user  | string | root |
 
 
 ## Example Usage
@@ -19,7 +20,8 @@ Installs zsh with OhMyZsh on alpine.
 ```json
 "features": {
     "ghcr.io/pineromarcos/devcontainer-features/zsh-alpine:latest": {
-        "theme": "agnoster"
+        "theme": "agnoster",
+        "username": "root"
     }
 }
 ```

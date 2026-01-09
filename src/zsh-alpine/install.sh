@@ -15,11 +15,19 @@ apk add --no-cache \
   wget \
   ncurses
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+if [ $USERNAME = "root" ]; then
+  echo "Installing OhMyZSH on root"
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+  USER_LOCATION="/root"
+else
+  echo "Installing OhMyZSH on $USERNAME"
+  su - "$USERNAME" -c "sh -c $(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
+  USER_LOCATION="/home/$USERNAME"
+fi
 
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $USER_LOCATION/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
-sed -i "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"${ZSH_THEME}\"/g" ~/.zshrc
-sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/g' ~/.zshrc
+sed -i "s/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"${ZSH_THEME}\"/g" $USER_LOCATION/.zshrc
+sed -i 's/plugins=(git)/plugins=(git zsh-autosuggestions)/g' $USER_LOCATION/.zshrc
 
 echo "OhMyZsh Installed"

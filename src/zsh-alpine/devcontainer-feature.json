@@ -1,7 +1,7 @@
 {
   "name": "zsh-alpine",
   "id": "zsh-alpine",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Installs zsh with OhMyZsh on alpine",
   "documentationURL": "https://github.com/pineromarcos/devcontainer-features",
   "options": {
@@ -16,6 +16,11 @@
         "powerlevel10k",
         "avit"
       ]
+    },
+    "username": {
+      "type": "string", 
+      "default": "root",
+      "description": "Remote User to setup OhMyZsh"
     }
   }
 }
