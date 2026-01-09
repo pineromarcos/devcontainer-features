@@ -1,0 +1,14 @@
+{
+  "name": "corepack-alpine",
+  "id": "corepack-alpine",
+  "version": "1.0.0",
+  "description": "Enabled modules with Corepack on alpine",
+  "documentationURL": "https://github.com/pineromarcos/devcontainer-features",
+  "options": {
+    "pnpm": {
+      "type": "boolean", 
+      "default": true,
+      "description": "Enable pnpm"
+    }
+  }
+}
