@@ -4,7 +4,7 @@ set -e
 
 echo "Installing Corepack..."
 
-ENABLE_PNPM=${PNPM:-true}
+ENABLE_PNPM=${PNPM:-"true"}
 
 corepack enable
 
