@@ -6,3 +6,4 @@ A curated collection of reusable, modular features for enhancing development env
 - [vim-alpine](https://github.com/pineromarcos/devcontainer-features/pkgs/container/devcontainer-features%2Fvim-alpine)
 - [vim-debian](https://github.com/pineromarcos/devcontainer-features/pkgs/container/devcontainer-features%2Fvim-debian)
 - [corepack-alpine](https://github.com/pineromarcos/devcontainer-features/pkgs/container/devcontainer-features%2Fcorepack-alpine)
+- [openspec-alpine](https://github.com/pineromarcos/devcontainer-features/pkgs/container/devcontainer-features%2Fopenspec-alpine)

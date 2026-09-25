@@ -1,0 +1,14 @@
+{
+  "name": "openspec-alpine",
+  "id": "openspec-alpine",
+  "version": "1.0.0",
+  "description": "Installs OpenSpec CLI on alpine",
+  "documentationURL": "https://github.com/pineromarcos/devcontainer-features",
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "description": "OpenSpec version to install (e.g. 1.13.2 or latest)"
+    }
+  }
+}
